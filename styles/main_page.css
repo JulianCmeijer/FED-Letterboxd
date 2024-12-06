@@ -1,0 +1,273 @@
+/* Section 1 */
+ 
+body a, p, h2, h3, h4 {
+    color:#a0acbc;
+}
+ 
+section:nth-of-type(1) {
+    display:grid;
+    grid-template-rows:
+        60vw
+        auto
+        auto
+        auto;
+ 
+        grid-template-areas:
+        "logo"
+        "kopje"
+        "link"
+        "tekst";
+ 
+        justify-items: center;
+        background-color: #181c1c;
+        position: relative;
+        padding: 1.25em;
+}
+ 
+section:nth-of-type(1) h2:nth-of-type(1) {
+    grid-area:kopje;
+    z-index:1;
+ 
+    color:white;
+    max-width: 26ch;
+    text-align: center;
+    margin: 1rem 2rem;
+ 
+    font-size: 1.05em;
+   
+    font-size: clamp(1.05em,5vw,1.5em );
+}
+ 
+section p:nth-of-type(1) {
+    grid-area:tekst;
+    z-index: 1;
+    color:white;
+    max-width: 28ch;
+    text-align: center;
+    margin: 1rem 2rem;
+}
+ 
+section p img {
+    height: 2rem;
+    width: 5rem;
+}
+ 
+section:nth-of-type(1) a {
+    grid-area:link;
+    z-index:1;
+    display: block;
+    background-color:#28ac34;
+    color:white;
+    padding:1em;
+    border-radius:1em;
+    font-weight: 800;
+    margin: 1rem 2rem;
+    text-align: center;
+}
+ 
+section img:nth-of-type(1) {
+    grid-area:logo;
+    z-index:1;  
+    align-self: end;    
+    color:white;
+    font-size:3em;
+}
+ 
+section img:nth-of-type(2) {
+    grid-area:logo/tekst;
+    width:100%;
+    height:60vw;
+   
+    mask:linear-gradient(
+        red 55%,
+        transparent
+    )
+}
+ 
+/*aanbevolen films images*/
+section:nth-of-type(2) {
+    display: flex;
+    align-items: flex-start;
+    gap:1em;
+}
+ 
+section:nth-of-type(2) a {
+    flex: 1;
+    max-width: 12em;
+}
+ 
+section:nth-of-type(2) img {
+    width: 100%;
+}
+ 
+/* Knoppen die eigenlijk geen knoppen zijn, maar links <a> */
+ 
+ 
+section:nth-of-type(3) div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+ 
+section:nth-of-type(3) a {
+    display: block;
+    align-items: center;
+ 
+    background-color: #485464;
+ 
+    margin:0.75em;
+    padding:1em 1.25em 1.125em;
+   
+    text-decoration: none;
+    text-align: start;
+   
+    border: 0;
+}
+ 
+section:nth-of-type(3) a:nth-of-type(1):hover {
+    background-color: #30c444;
+}
+ 
+section:nth-of-type(3) a:nth-of-type(2):hover {
+    background-color: #f07404;
+}
+ 
+section:nth-of-type(3) a:nth-of-type(3):hover {
+    background-color: #289ce4;
+}
+ 
+section:nth-of-type(3) a:nth-of-type(4):hover {
+    background-color: #30c444;
+}
+ 
+section:nth-of-type(3) a:nth-of-type(5):hover {
+    background-color: #f07404;
+}
+ 
+section:nth-of-type(3) a:nth-of-type(6):hover {
+    background-color: #289ce4;
+ 
+}
+section:nth-of-type(3) a:hover p {
+    color: white;
+}
+ 
+section:nth-of-type(3) p {
+    display: block;
+    text-align: center;
+    margin: 2;
+    padding: 0.3125em 0em 0em;
+    line-height: 1.5em;
+    color: #a0acbc;
+}
+ 
+section:nth-of-type(3) img {
+  height: 5rem;
+  width: 5rem;
+}
+ 
+section:nth-of-type(3) a {
+    display: flex;
+}
+section:nth-of-type(3) p {
+    text-align: left;
+}
+ 
+ 
+ 
+ 
+/* Mid section (4) */
+section:nth-of-type(4) h2 {
+    position: relative;
+    text-align: center;
+ 
+    color:#a0acbc;
+    max-width: 40ch;
+   
+    font-size: 1.05em;
+    font-size: clamp(1.05em,5vw,1.5em);
+ 
+    margin-left:auto;
+    margin-right:auto;
+}
+ 
+section:nth-of-type(4) p {
+    position: relative;
+    text-align: center;
+ 
+    color:#a0acbc;
+ 
+    max-width: 40ch;
+ 
+    line-height: 1.5em;
+    margin-left:auto;
+ 
+    margin-right:auto;
+}
+ 
+
+section:nth-of-type(4) a {
+    color: #def;
+}
+/* Reviews */
+ 
+section:nth-of-type(5) h2 {
+    margin: 1.125em 0em 0.75em;
+    font-size: 0.75em;
+    position: relative;
+    margin-top: 3em;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.75;
+    margin-left: 0.9375em;
+    margin-right: 0.9375em;
+}
+ 
+section:nth-of-type(5) h2::after {
+    content: "";
+    position: absolute;
+    left: 0;    
+    right: 0;
+    bottom: -5px;
+    height: 1px;
+    background-color: #456;
+}
+
+section:nth-of-type(5) li {
+    list-style-type: none;
+}
+
+
+section:nth-of-type(5) a:nth-of-type(1) img {
+    box-sizing: border-box;
+    display: block;
+
+    height: 100%;
+    width: 70px;
+    height: 105px;
+    left: 0;
+    right: 0;
+    
+
+    overflow: hidden;
+}
+
+section:nth-of-type(5) div:nth-of-type(1) img {
+    border-radius: 0.7500em
+    
+}
+
+section:nth-of-type(5) div:nth-of-type(1) a {
+    text-decoration: slategray;
+}
+
+
+
+
+
+div span:nth-of-type(2) img,
+div span:nth-of-type(3) img {
+    width: 0.5em;
+    height: 0.5em;
+}

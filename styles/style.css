@@ -1,0 +1,87 @@
+*, *::after, *::before {
+    box-sizing:border-box;  
+  }
+  /* Van basis CSS file */
+ 
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #181c1c;
+    color: white;
+    font-family: Arial, sans-serif;
+    border: 0;
+}
+ 
+/* Header */
+    .visually-hidden {
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+      }
+ 
+header nav img{
+    width:2em;
+    height: auto;
+}
+ 
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+ 
+nav {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+ 
+nav img {
+    display: block;
+    margin-left: 1em;
+    height: auto;
+    /* fill: #a0a8ac; */
+}
+ 
+nav span {
+    font-size: 0;
+}
+ 
+/* Tekst */
+h1, h2, h3, h4, h5, p, a{
+    color: white;
+    text-decoration: none;
+}
+/* Images */
+img {
+    width: 100%;
+}
+ 
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+ 
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+ 
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+ 
+ 
+/* TO DO:
+-FONTS
+ */
