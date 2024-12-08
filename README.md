@@ -178,29 +178,19 @@ d
 ## Voortgang 3 (week 4)
 
 <details>
-  <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
+  <summary>Julian, Joshua en Mohammed<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Deze les was vooral besteed aan GitHub regelen voor mij.
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Voor Joshua werd er naar zijn Grit gekeken en voor Mohammed zijn Hamburger menu.
+  Mijn Github werkte niet goed, dus daar werd deze les aan besteed
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+ Github werkend gekregen. Studenten assistent wist niet wat er gebeurde of wat er fout ging, maar met aantal trial en error kwam het goed.
 
 </details>
 
@@ -214,19 +204,21 @@ d
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="images/" width="375px" alt="nth-type-of()">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Wat ik vooral heb geleerd is het gebruik maken van nth en het vermijden van Classes en ID. Alleen ben ik me niet van bewust wat het nut ervan is. Ik ga er van uit dat Classes en ID niet toegangkelijk zijn.
+  <img src="images/geleerd 1.png" width="375px" alt="nth-type-of()">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="images/niet_1.png" width="375px" alt="bummer">
+    <img src="images/niet_1_1.png" width="375px" alt="bummer">
+
+
 </details>
 
 
@@ -242,8 +234,8 @@ d
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
+  1. /* Hamburger menu BRON: https://www.youtube.com/watch?v=aNDqzlAKmZc */
+  2. ...
   3. ...
 
 </details>
