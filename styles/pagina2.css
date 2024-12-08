@@ -1,0 +1,5 @@
+section:nth-of-type(2) {
+    display: grid;
+    grid-auto-flow: column; 
+    grid-template-columns: [detail] auto [poster] 65%; 
+}

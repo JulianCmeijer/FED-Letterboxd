@@ -11,6 +11,10 @@ body{
     font-family: Arial, sans-serif;
     border: 0;
 }
+
+a, p, h2, h3, h4 {
+    color:#a0acbc;
+}
  
 /* Header */
     .visually-hidden {
@@ -22,19 +26,71 @@ body{
         white-space: nowrap;
         width: 1px;
       }
- 
-header nav img{
+
+
+/* Hamburger menu BRON: https://www.youtube.com/watch?v=aNDqzlAKmZc */
+    
+    nav:nth-of-type(1){
+        position: absolute; 
+        top: 0.5em; 
+        right: 0.5em; 
+        z-index: 100; 
+    }
+    
+    header div:nth-of-type(1) {
+        position: relative;
+    }
+    
+    header ul {
+        position: absolute;
+        top: 1em; 
+        right: -400px; 
+        background-color: #313535; 
+        transition: transform 0.3s ease; 
+        z-index: 100; 
+    }
+    
+    header ul li {
+        list-style-type: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    
+    header ul li:hover {
+        background-color: #4d4e63; 
+    }
+    
+    /* Slide-in class */
+    .slide-in {
+        transform: translateX(-450px); /* Slide the menu in */
+    }
+
+    
+header nav svg{
     width:2em;
     height: auto;
 }
- 
-header, footer {
+
+button {
+    background: none;
+    border: none;
+}
+
+header{
     background-color: #333;
     color: white;
     padding: 10px 20px;
+    height: 2em;
 }
- 
-nav {
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    height: auto;
+}
+
+nav:nth-of-type(2) {
     display:flex;
     justify-content: flex-end;
     align-items: center;
@@ -43,8 +99,7 @@ nav {
 nav img {
     display: block;
     margin-left: 1em;
-    height: auto;
-    /* fill: #a0a8ac; */
+    height: 5em;
 }
  
 nav span {
@@ -56,18 +111,27 @@ h1, h2, h3, h4, h5, p, a{
     color: white;
     text-decoration: none;
 }
+
 /* Images */
 img {
     width: 100%;
 }
  
 /* Footer */
+
+nav:nth-of-type(2) {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 0.625px 0;
     position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: 2em;
 }
  
 nav ul {
@@ -78,10 +142,14 @@ nav ul {
  
 nav ul li {
     display: inline;
-    margin-right: 15px;
+    margin-right: 0.93em;
 }
  
- 
-/* TO DO:
--FONTS
- */
+nav:nth-of-type(2) img {
+    width: 2em;
+    height: 2em;
+}
+
+svg {
+    fill: lightgray
+}
